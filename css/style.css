@@ -1,0 +1,674 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: lightblue;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+}
+
+main .sec-principal{
+    background-image: url("../assets/primeraceleste2.jpg");
+    width: 100%;
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec-principal h1{
+    font-size: 2rem;
+    color: white;
+    display: inline;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sec-secundario h2{
+    text-align: center;
+    color: #73B2D9;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    margin: 1rem 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info p {
+    font-size: 1.2rem;
+    margin: 1.5rem 0px;
+}
+
+.info figure{
+    display: flex;
+    justify-content: center;
+}
+
+.info img{
+    height: 15rem;
+}
+
+main{
+    height: 100vh;
+}
+
+footer{
+    background-color: #3363AE;
+    display: flex;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+
+.sec-info figure{
+    display: flex;
+    justify-content: center;
+}
+
+
+article{
+    font-size: 1.5rem;
+    margin: 2rem 0px;
+}
+
+article figure img{
+    height: 30rem;
+    margin: 2rem 0px;
+}
+
+
+.sec-galeria .galeria{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);   
+    grid-auto-rows: auto;
+}
+
+.figure-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.sec-galeria .galeria .figure-1 img{
+    width: 30rem;
+    height: 70%;
+}
+
+.figure-2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.sec-galeria .galeria .figure-2 img{
+    width: 30rem;
+    height: 70%;
+}
+
+.figure-3{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.sec-galeria .galeria .figure-3 img{
+    width: 20rem;
+    height: 70%;
+}
+
+.figure-4{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.sec-galeria .galeria .figure-4 img{
+    width: 24rem;
+    height: 70%;
+}
+
+.figure-5{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.sec-galeria .galeria .figure-5 img{
+    width: 25rem;
+    height: 70%;
+}
+
+.figure-6{
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.sec-galeria .galeria .figure-6 img{
+    width: 25rem;
+    height: 24%;
+}
+
+.sec-galeria .galeria figure{
+    width: 30%;
+    margin: 1rem;
+}
+
+.sec-galeria .galeria figure img{
+    width: 100%;
+}
+
+.sec-galeria .galeria figure figcaption{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+section h2{
+    text-align: center;
+    color: #73B2D9;
+    font-size: 2rem;
+    margin: 1.5rem 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+form{
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+label{
+    color: white;
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+    background-color: #73B2D9;
+    width: 80%;
+}
+
+section form legend{
+    text-align: center;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    color: white;
+}
+
+section form fieldset{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    width: 75%;
+    padding: 0.3rem;
+    border: 0.1rem solid #3363AE;
+    margin: 1rem 0px;
+}
+
+form input[type="submit"]{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.redes{
+    margin-top: 134%;
+}
+
+.festadio{
+    margin-top: 92%;
+}
+
+.fgaleria{
+    margin-top: 28%
+}
+
+/* css para 1024 */
+/* index */
+@media (max-width: 1024px){
+    header{
+        width: 100%;
+    }
+
+    .navbar li {
+        padding-right: 2rem;
+    }
+
+    main .sec-principal{
+        height: 10rem;
+        width: 100%;
+    }
+
+    .sec-principal h1{
+        padding-right: 2rem;
+    }
+
+    .info img{
+        height: 17rem;
+    }
+
+    .info p{
+        font-size: 1rem;
+        display: contents;
+    }
+
+}
+
+/* css para 768 */
+/* index */
+@media (max-width: 768px){
+
+    header{
+        width: 100%;
+    }
+    
+    main .sec-principal{
+        height: 7.5rem;
+        width: 100%;
+    }
+    
+    main .sec-principal h1{
+        font-size: 1.2rem;
+    }
+
+    
+}
+
+/* css para 480 */
+/* index */
+
+@media(max-width: 480px){
+    
+    header{
+        width: 100%;
+        height: 1vh;
+    }
+    main .sec-principal{
+        height: 5rem;
+        width: 102.5%;
+    }
+
+    main .sec-principal h1{
+        font-size: 1rem;
+    }
+
+    .info img{
+        height: 12rem;
+    }
+
+    .navbar li a{
+        font-size: 0.8rem;
+        width: 100%;
+        padding-right: 0.4rem;
+    }
+
+    .navbar li{
+        padding: 0.5rem;
+    }
+
+    .navbar{
+        padding: 0%;
+    }
+
+
+    .foot{
+        width: 102.5%;
+    }
+}
+
+
+/* css para 320 */
+/* index */
+
+@media(max-width: 320px){
+
+    header{
+        width: 100%;
+    }
+
+    main .sec-principal{
+        width: 102.5%;
+        height: 3.3rem;
+    }
+
+    main .sec-principal h1{
+        padding-left: 15rem;
+    }
+    
+    .info p{
+        font-size: 1rem;
+    }
+
+    .info img{
+        height: 10rem;
+    }
+
+    .foot{
+        width: 102.5%;
+    }
+
+    .foot a{
+        font-size: 0.7rem;
+    }
+
+    .info p{
+        font-size: 0.8rem;
+        display: contents;
+    }
+    
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        font-size: 1rem;
+        padding: 0%;
+        margin: 0%;
+    }
+    
+}
+
+
+/* css para 1024 */
+/* Galeria */
+
+@media(max-width: 1024px){
+
+    nav{
+        margin: 0;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    .sec-principal{
+        height: 10rem;
+    }
+
+    main .sec-principal h1{
+        margin-right: 0rem;
+    }
+
+    .figure-3{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .figure-6{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .sec-galeria .galeria .figure-3 img{
+        width: 20rem;
+        margin-top: 5rem;
+        height: 25rem;
+    }
+
+    .sec-galeria .galeria .figure-5 img{
+        margin-top: 5rem;
+    }
+
+    .sec-galeria .galeria figure figcaption{
+        font-size: 1rem;
+    }
+
+    .sec-galeria .galeria .figure-4 img{
+        margin-top: 5rem;
+    }
+
+    .sec-galeria .galeria .figure-6 img{
+        width: 25rem;
+        height: 25rem;
+        margin-top: 5rem;
+    }
+
+    .fgaleria{
+        margin-top: 63rem;
+    }
+}
+
+/* css para 768 */
+/* galeria */
+
+@media(max-width: 768px){
+    .sec-principal{
+        height: 7.5rem;
+        width: 100%;
+    }
+
+    .sec-principal h1{
+        font-size: 1.5rem;
+    }
+
+    .sec-galeria .galeria .figure-1 img{
+        width: 14rem;
+        height: 80%;
+    }
+
+    .sec-galeria .galeria .figure-2 img{
+        width: 14rem;
+        height: 80%;
+    }
+
+
+    .sec-galeria .galeria .figure-3 img{
+        width: 14rem;
+        height: 21rem;
+    }
+
+    .sec-galeria .galeria .figure-4 img{
+            width: 14rem;
+            height: 50%;
+            margin-top: 8rem;
+        }
+
+    .sec-galeria .galeria .figure-5 img{
+        width: 14rem;
+        height: 50%;
+        margin-top: 8rem;
+    }
+
+    .sec-galeria .galeria .figure-6 img{
+        width: 14rem;
+        height: 21rem;
+    }
+
+    .sec-galeria .galeria figure figcaption{
+        font-size: 1rem;
+    }
+
+    .fgaleria{
+        margin-top: 45rem;
+    }
+}
+
+/* css para 480 */
+/* galeria */
+
+@media(max-width: 480px){
+
+    header{
+        width: 102.5%;
+        height: 100%;
+    }
+
+    .sec-principal{
+        height: 5rem;
+        width: 102.5%;
+    }
+
+    main .sec-principal h1{
+        font-size: 0.8rem;
+        
+    }
+
+    .navbar li a{
+        font-size: 0.8rem;
+        width: 102.5%;
+    }
+
+    .navbar li{
+        padding: 0.5rem;
+    }
+
+    .navbar li a{
+        font-size: 0.8rem;
+        width: 100%;
+        padding-right: 0.4rem;
+    }
+    
+    .figure-3{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .figure-6{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .sec-galeria .galeria .figure-1 img{
+        width: 14rem;
+        height: 80%;
+    }
+
+    .sec-galeria .galeria .figure-2 img{
+        width: 12rem;
+        height: 80%;
+    }
+
+
+    .sec-galeria .galeria .figure-3 img{
+        width: 12rem;
+        height: 15rem;
+        margin-top: 8rem;
+    }
+
+    .sec-galeria .galeria .figure-4 img{
+            width: 14rem;
+            height: 50%;
+            margin-top: 8rem;
+        }
+
+    .sec-galeria .galeria .figure-5 img{
+        width: 12rem;
+        height: 50%;
+        margin-top: 8rem;
+    }
+
+    .sec-galeria .galeria .figure-6 img{
+        width: 14rem;
+        height: 40%;
+        margin-top: 8rem;
+    }
+
+    .fgaleria{
+        margin-top: 48rem;
+    }
+
+    
+}
+
+
+/* css 320 */
+/* galeria */
+
+@media(max-width: 320px){
+
+    .figure-1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .figure-2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .figure-3{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    .figure-4{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .figure-5{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .figure-6{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        font-size: 1rem;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .sec-galeria .galeria .figure-1 img{
+        width: 18rem;
+        height: 13rem;
+    }
+
+    .sec-galeria .galeria .figure-2 img{
+        width: 18rem;
+        height: 13rem;
+    }
+    
+    .sec-galeria .galeria .figure-3 img{
+        width: 18rem;
+        height: 13rem;
+    }
+
+    .sec-galeria .galeria .figure-4 img{
+        width: 18rem;
+        height: 13rem;
+    }
+
+    .sec-galeria .galeria .figure-5 img{
+        width: 18rem;
+        height: 13rem;
+    }
+
+    .sec-galeria .galeria .figure-6 img{
+        width: 18rem;
+        height: 13rem;
+    }
+
+    .fgaleria{
+        margin-top: 127rem;
+    }
+}
+
